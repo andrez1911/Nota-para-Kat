@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Una nota para ti 💛</title>
   
-  <!-- Fuente estilo manuscrita de Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -35,31 +35,26 @@
 
     .post-it {
       background: #fff07c;
-      width: 200px;
-      min-height: 400px;
-      padding: 35px 20px 20px 20px;
+      width: 420px;       /* Ancho rectangular */
+      min-height: 220px;  /* Altura proporcional */
+      padding: 30px;
       position: relative;
       font-size: 1.8rem;
       color: #2c2c2c;
       line-height: 1.4;
-      
-      /* Inclinación y sombra realista estilo papel */
       transform: rotate(-3deg);
       box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.16);
       transition: all 0.3s ease;
-      
-      /* Esquina levemente doblada */
       border-bottom-right-radius: 60px 5px;
     }
 
-    /* Efecto de cinta adhesiva en la parte superior */
     .post-it::before {
       content: "";
       position: absolute;
       top: -15px;
       left: 50%;
       transform: translateX(-50%) rotate(-1deg);
-      width: 70px;
+      width: 110px;
       height: 30px;
       background-color: rgba(255, 255, 255, 0.6);
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -68,7 +63,6 @@
       border-right: 2px dashed rgba(0,0,0,0.05);
     }
 
-    /* Animación suave al pasar el ratón o tocar */
     .post-it:hover {
       transform: rotate(0deg) scale(1.02);
       box-shadow: 0 15px 30px rgba(0,0,0,0.18), 0 10px 10px rgba(0,0,0,0.15);
@@ -83,10 +77,9 @@
 
   <div class="sticker-container">
     <div class="post-it">
-      <!-- Cambia este mensaje por el texto que desees -->
       <p>
-        ¡Hola! 👋<br><br>
-        Espero que tengas un excelente día. Solo quería dejarte esta nota por aquí para recordarte lo especial que eres. ✨
+        Hola mi amor!<br><br>
+       Te extraño mucho, cada dia me haces mas falta :(
       </p>
     </div>
   </div>

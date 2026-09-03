@@ -32,30 +32,30 @@
       perspective: 1000px;
     }
 
-    .post-it {
-      background: #c849ac;
-      width: 320px;       /* Ancho rectangular */
-      min-height: 200px;  /* Altura proporcional */
-      padding: 30px;
-      position: relative;
-      font-size: 1.8rem;
-      color: #2c2c2c;
-      line-height: 1.4;
-      transform: rotate(-3deg);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.16);
-      transition: all 0.3s ease;
-      border-bottom-right-radius: 60px 5px;
-    }
+   .post-it {
+    background: #c849ac;
+    width: 380px;            /* Mayor ancho para que quepa el texto */
+    max-width: 90vw;         /* Evita que se salga en pantallas móviles */
+    min-height: 250px;       
+    padding: 30px;
+    position: relative;
+    font-size: 1.5rem;       /* Reduce ligeramente la fuente si el texto es muy largo */
+    color: #2c2c2c;
+    line-height: 1.4;
+    transform: rotate(-3deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.16);
+    transition: all 0.3s ease;
+    border-bottom-right-radius: 60px 5px;
 
     .post-it::before {
-      content: "";
-      position: absolute;
-      top: -15px;
-      left: 50%;
-      transform: translateX(-50%) rotate(-1deg);
-      width: 110px;
-      height: 30px;
-      background-color: rgba(255, 255, 255, 0.6);
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(1px);
       border-left: 2px dashed rgba(0,0,0,0.05);

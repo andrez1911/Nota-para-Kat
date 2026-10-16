@@ -34,21 +34,19 @@
 
 .post-it {
   background: #ffed48;
-  width: 350px;
-  aspect-ratio: 1 / 1;    /* Fuerza una relación de aspecto 1:1 (cuadrada) */
+  width: 550px;           /* Un ancho mucho más amplio para que las líneas de texto sean más largas */
   max-width: 90vw;
-  padding: 30px;
+  padding: 40px;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;      
   color: #2c2c2c;
-  line-height: 1.4;
+  line-height: 1.5;
   transform: rotate(-3deg);
   box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.16);
   transition: all 0.3s ease;
   border-bottom-right-radius: 60px 5px;
   box-sizing: border-box;
 }
-
     .post-it::before {
     content: "";
     position: absolute;

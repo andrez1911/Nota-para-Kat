@@ -32,23 +32,20 @@
       perspective: 1000px;
     }
 
- .post-it {
+.post-it {
   background: #ffed48;
-  width: 500px;           /* Aumentamos el ancho para que el texto respire mejor */
-  max-width: 90vw;        /* Se adapta si la pantalla es pequeña */
-  height: 500px;          /* Altura fija para hacerla cuadrada */
-  max-height: 80vh;       /* Evita que se salga de la pantalla en verticales */
-  overflow-y: auto;       /* Añade una barra de desplazamiento si el texto es muy largo */
-  padding: 30px;
+  width: 550px;           /* Un ancho mucho más amplio para que las líneas de texto sean más largas */
+  max-width: 90vw;
+  padding: 40px;
   position: relative;
-  font-size: 1.3rem;      /* Reducimos un poco el texto para que quepa mejor */
+  font-size: 1.3rem;      
   color: #2c2c2c;
-  line-height: 1.4;
+  line-height: 1.5;
   transform: rotate(-3deg);
   box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.16);
   transition: all 0.3s ease;
   border-bottom-right-radius: 60px 5px;
-  box-sizing: border-box; /* Vital para que el padding no rompa las medidas */
+  box-sizing: border-box;
 }
 
     .post-it::before {
